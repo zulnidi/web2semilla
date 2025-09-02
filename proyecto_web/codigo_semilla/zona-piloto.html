@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semilla Azul - Zona Piloto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="pilot-zone-page">
+
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html" class="logo" aria-label="Semilla Azul - Ir a la página de inicio"></a>
+            <img src="" alt="Logo de semilla azul">
+            <h1>SEMILLA AZUL</h1>
+        </div>
+        <div class="user-actions">
+            <a href="iniciar-sesion.html" class="button primary">Iniciar Sesión</a>
+            <a href="crear-cuenta.html" class="button primary">Crear Cuenta</a>
+            <span class="language-select">Idioma</span>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="zona-piloto.html" aria-current="page">Zona Piloto</a></li>
+            <li><a href="que-sucede.html">¿Qué sucede hoy?</a></li>
+            <li><a href="participa.html">Participa</a></li>
+            <li><a href="boletines.html">Boletines e Informes</a></li>
+            <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+            <li><a href="seedgame.html">SeedGame</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="page-title">Zona Piloto</h1>
+
+        <section class="carousel-section" aria-label="Carrusel de imágenes de la zona piloto">
+            <div class="carousel-container">
+                <button id="prevBtn" class="carousel-control prev" aria-label="Anterior">‹</button>
+                
+                <div class="carousel-images" role="group" aria-live="polite">
+                    <figure id="slide-1">
+                        <img src="/path/to/image1.jpg" alt="Laguna tropical con un sensor de monitoreo de Semilla Azul." class="carousel-img">
+                    </figure>
+                    <figure id="slide-2">
+                        <img src="/path/to/image2.jpg" alt="Bote en un lago con un investigador de Semilla Azul." class="carousel-img">
+                    </figure>
+                    <figure id="slide-3">
+                        <img src="/path/to/image3.jpg" alt="Atardecer sobre el agua en la zona piloto." class="carousel-img">
+                    </figure>
+                </div>
+
+                <button id="nextBtn" class="carousel-control next" aria-label="Siguiente">›</button>
+            </div>
+
+            <div class="carousel-indicators" role="tablist">
+                <button class="indicator active" role="tab" aria-selected="true" aria-controls="slide-1" aria-label="Ver imagen 1"></button>
+                <button class="indicator" role="tab" aria-selected="false" aria-controls="slide-2" aria-label="Ver imagen 2"></button>
+                <button class="indicator" role="tab" aria-selected="false" aria-controls="slide-3" aria-label="Ver imagen 3"></button>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-container">
+                <div class="info-text">
+                    <h2 class="info-title">¿De qué trata esto?</h2>
+                    <p class="info-description">
+                        Un sistema que permite monitorear en tiempo real la calidad del agua, usando sensores y una
+                        aplicación fácil de usar. Pensado para empoderar a las comunidades con información clara,
+                        alertas tempranas y herramientas para tomar decisiones que protejan su recurso más valioso: el
+                        agua.
+                    </p>
+                </div>
+                <div class="info-image-container">
+                    <img src="/path/to/info-image.jpg" alt="Dispositivo de monitoreo de agua flotando en un cuerpo de agua." class="info-image">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

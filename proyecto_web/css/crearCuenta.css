@@ -1,0 +1,193 @@
+:root {
+  --primario: #006666;
+  --secundario: #A60815;
+  --acento: #BF0F30;
+  --claro: #F2F2F2;
+  --fondo: rgba(255, 255, 255, 0.7);
+  --texto: #4b4949;
+  --borde: #ccc;
+  --verde-boton: #006666;
+  --verde-boton-hover: #004d4d;
+  --color-link: #000080;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inria Serif', serif;
+}
+
+body.create-account-page {
+  background: url('../img/fondo-playa.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--texto);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primario);
+  padding: 10px 30px;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container h1 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.language-select {
+  font-size: 1em;
+}
+
+.main-nav {
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.main-nav li {
+  margin: 0 15px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--primario);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: var(--acento);
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.form-container {
+  background-color: var(--fondo);
+  backdrop-filter: blur(10px);
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.8em;
+  color: var(--primario);
+  margin-bottom: 25px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--primario);
+}
+
+.form-field .required {
+  color: var(--acento);
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1em;
+  border-radius: 30px;
+  border: 1px solid var(--borde);
+  background-color: white;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: none;
+  border-color: var(--verde-boton);
+  box-shadow: 0 0 5px var(--verde-boton);
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: var(--verde-boton);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1em;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: var(--verde-boton-hover);
+}
+
+.form-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.form-link a {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 1.5em;
+  }
+}
